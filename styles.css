@@ -1,0 +1,111 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #f7f5f5;
+    padding: 30px;
+    text-align: center;
+    background-image: url('背景照片.png');
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+#title {
+    font-size: 4em;      /* 设置字体大小 */
+    font-weight: bold;   /* 设置字体加粗 */
+    color: #fc5353;          /* 设置字体颜色 */
+    text-align: center;  /* 设置文本居中 */
+}
+
+
+#instructions {
+    font-size:25px;
+    color: #000000;
+    margin: 25px;
+}
+
+#challenges {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.button-challenge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #b64c4c;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-challenge:hover {
+    background-color: #FFB6C1;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #FFB6C1;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF69B4;
+    transform: scale(1.1);
+}
+
+button.locked {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button.wrong {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 13px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: #de82c5;
+    width: 0%;
+    border-radius: 10px;
+}

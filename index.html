@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>二十四时（恋爱小游戏）</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+        <h1 id="title">&circ;oo&circ;      二十四时       &circ;oo&circ;</h1>
+        <p id="instructions">
+            恋爱版小游戏《二十四时》正式发布，让我们一起祝这个傻崽生日快乐！<br>
+            游戏规则：每隔一小时，系统会自动解锁一个新的任务挑战，每完成一个挑战你都会得到一个新的线索，集齐24个线索，解密终极挑战！ <br>
+            PS：记得把每个线索都认真记下来噢，最好按照任务顺序完成挑战，祝你好运！<br>
+            Developed by Lact0409  <br>
+            21-07-2023
+        </p>
+        <h2 id="countdown"></h2>
+        <div id="challenges">
+        </div>
+    </div>
+    <div class="progress">
+        <div id="progress-bar" class="progress-bar">
+            <span id="progress-text"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+<style>
+    .solved {
+        background-color: #de82c5; /* 你可以选择其他颜色 */
+    }
+</style>
+
+</html>
