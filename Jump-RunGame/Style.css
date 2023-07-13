@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100vh;  
+    position: relative;
+    overflow: hidden;
+
+}
+.sky{
+ 
+    background-image: url('./game.jpg');
+    background-repeat: no-repeat;
+}
+#ground{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(157, 30, 52);
+    position: absolute;
+    bottom: 0;
+}
+#character{
+
+    position: absolute;
+    bottom: 100px;
+    right: calc(100% - 100px);
+}
+
+.obstacle{
+    width: 30px;
+    height: 100px;
+    background-color: #000000;
+    position: absolute; 
+    bottom: 100px;
+    right: 0;
+}
+
+h2{
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#victoryMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+

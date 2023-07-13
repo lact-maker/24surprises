@@ -1,0 +1,13 @@
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+#message {
+    margin-top: 20px;
+}
