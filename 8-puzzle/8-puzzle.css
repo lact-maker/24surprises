@@ -1,0 +1,13 @@
+
+.tile {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}

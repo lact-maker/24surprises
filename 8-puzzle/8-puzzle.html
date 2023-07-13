@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>记忆印痕</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="8-puzzle.css">
+    </head>
+
+    
+    <style>
+        #board {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .tile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        #game-status {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        #game-intro {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-intro">这是一个升级版的8-Puzzle游戏，你需要回忆起下面这些图片发生的时间，并按照时间顺序通过点击图片将它们按1-2-3-4-5-6-7-8的左右上下顺序排列。</div>
+    
+    <div id="board"></div>
+    <div id="game-status"></div>
+    
+
+    <script src="8-puzzle.js"></script>
+</body>
+</html>
