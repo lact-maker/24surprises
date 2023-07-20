@@ -258,8 +258,8 @@ challenges.forEach((challenge, index) => {
 
     // 每个小时解锁一个新的挑战
     const now = new Date();
-   // const hoursSinceMidnight = now.getHours();
-   const hoursSinceMidnight = 24;
+    const hoursSinceMidnight = now.getHours();
+    // const hoursSinceMidnight = 24;
     if (hoursSinceMidnight >= index) {
         button.classList.remove('locked');
         button.addEventListener('click', () => {
